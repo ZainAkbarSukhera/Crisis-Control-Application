@@ -35,33 +35,6 @@ public class LoginActivity extends AppCompatActivity {
         initViews();
 
 
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-//            // Create channel to show notifications.
-//            String channelId  = "Channel1";
-//            String channelName = "Fcm notifications";
-//            NotificationManager notificationManager =
-//                    getSystemService(NotificationManager.class);
-//            notificationManager.createNotificationChannel(new NotificationChannel(channelId,
-//                    channelName, NotificationManager.IMPORTANCE_HIGH));
-//        }
-//
-//
-//
-//        FirebaseMessaging.getInstance().getToken()
-//                .addOnCompleteListener(new OnCompleteListener<String>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<String> task) {
-//                        if (!task.isSuccessful()) {
-//
-//                            return;
-//                        }
-//                        // Get new Instance ID token
-//                        String token = task.getResult();
-//
-//                        //Toast.makeText(MainActivity.this, ""+token, Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -109,14 +82,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-//        btnGuest.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(LoginActivity.this,LiveFeedActivity.class);
-//                CurrentAccount.initInstance(-1,CurrentAccount.GUEST_TYPE);
-//                startActivity(intent);
-//            }
-//        });
     }
 
     private void initViews() {
@@ -124,7 +89,6 @@ public class LoginActivity extends AppCompatActivity {
         loginPass=findViewById(R.id.loginPassword);
         btnLogin=findViewById(R.id.btnLogin);
         txtLoginSignUp=findViewById(R.id.txtLoginSignUp);
-//        btnGuest=findViewById(R.id.btnGuest);
         db=CCDatabase.getInstance(this);
 
     }
