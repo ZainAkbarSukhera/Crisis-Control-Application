@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".activities.ReportListActivity">
+    tools:context=".activities.ReportListActivity"
+    android:background="#EDE5D4">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,6 +29,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/btnReportType"
         android:text="Managed reports"
+        android:backgroundTint="#C2373D"
         />
 
 </RelativeLayout>

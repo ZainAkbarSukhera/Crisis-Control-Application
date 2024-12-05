@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".activities.NGOAccountMainActivity">
+    tools:context=".activities.NGOAccountMainActivity"
+    android:background="#EDE5D4">
 
     <ImageButton
         android:id="@+id/NGOLogout"
@@ -20,18 +21,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/NGOLogout" />
 
     <TextView
         android:id="@+id/txtNGOMainName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NGO NAME"
-
-        android:textStyle="bold"
+        android:textColor="#133240"
+        android:textAlignment="center"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/v_profile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,9 +41,10 @@
 
     <Button
         android:id="@+id/addDonationAllocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:text="Submit Donation Allocations"
+        android:backgroundTint="#C2373D"
         app:layout_constraintBottom_toTopOf="@+id/rate_p"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,9 +52,10 @@
 
     <Button
         android:id="@+id/rate_p"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:text="View Projects"
+        android:backgroundTint="#C2373D"
         app:layout_constraintBottom_toTopOf="@+id/btnAllMedicalHelp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,9 +63,10 @@
 
     <Button
         android:id="@+id/loc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:text="Camp Locations"
+        android:backgroundTint="#C2373D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,20 +75,21 @@
     <Button
 
         android:id="@+id/v_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginTop="184dp"
         android:text="View Profile"
-
+        android:backgroundTint="#C2373D"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnAcceptedMedicalHelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:text="Accepted Medical Requests"
+        android:backgroundTint="#C2373D"
         app:layout_constraintBottom_toTopOf="@+id/loc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,9 +97,10 @@
 
     <Button
         android:id="@+id/btnAllMedicalHelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:text="Medical Requests"
+        android:backgroundTint="#C2373D"
         app:layout_constraintBottom_toTopOf="@+id/btnAcceptedMedicalHelp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

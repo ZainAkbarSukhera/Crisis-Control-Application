@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.DonationPostActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#EDE5D4">
 
 
     <TextView
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:text="NGO NAME"
         android:textAlignment="center"
+        android:textColor="#133240"
         android:textSize="40sp"
         android:layout_marginTop="30dp"
         />
@@ -21,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Title"
+        android:textColor="#133240"
         android:layout_below="@+id/donationPostNgoName"
         android:id="@+id/donationPostTitle"
         android:textAlignment="center"
@@ -31,6 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Description"
+        android:textColor="#133240"
+        android:textAlignment="center"
         android:layout_below="@id/donationPostTitle"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="10dp"
@@ -41,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Amount"
+        android:textColor="#133240"
         android:textAlignment="center"
         android:id="@+id/donatePostAmount"
         android:layout_below="@id/donationPostDescription"
@@ -53,6 +59,7 @@
         android:layout_height="wrap_content"
         android:text=" donated out of "
         android:textSize="20sp"
+        android:textColor="#133240"
         android:layout_alignBaseline="@id/donatePostAmount"
 
         android:layout_centerHorizontal="true"
@@ -62,6 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="donated"
+        android:textColor="#133240"
         android:textSize="20sp"
         android:layout_alignBaseline="@id/donatePostAmount"
         />
@@ -93,15 +101,16 @@
         android:layout_centerHorizontal="true"
         android:hint="Amount"
         android:id="@+id/donationPostEditText"
-
+        android:textColor="#133240"
         android:inputType="number"
         android:layout_marginTop="20dp"
 
         />
     <Button
         android:id="@+id/donationPostButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C2373D"
         android:layout_below="@id/donationPostEditText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
@@ -126,12 +135,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:textSize="11sp"
-                android:text="Request Volunteers" />
+                android:backgroundTint="#C2373D"
+                android:text="Request Volunteers"
+                />
 
             <Button
                 android:id="@+id/btnRequestDonations"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#C2373D"
                 android:text="Request Donations"
                 android:textSize="11sp"/>
 
@@ -147,9 +159,10 @@
 
             <Button
                 android:id="@+id/btnUpdateProject"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Update Post" />
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Update Post"
+                android:backgroundTint="#C2373D"/>
         </LinearLayout>
 
 

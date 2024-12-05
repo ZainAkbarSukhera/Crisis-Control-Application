@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.DonationAllocationFormActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#EDE5D4"
+    >
 
     <EditText
         android:id="@+id/edDonationAllocFormAmountSpent"
@@ -14,6 +16,7 @@
         android:layout_marginTop="20dp"
         android:hint="Amount Spent"
         android:inputType="numberDecimal"
+        android:textColor="#133240"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="Project Name"
+        android:textColor="#133240"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edDonationAllocFormAmountSpent" />
@@ -35,6 +39,7 @@
         android:layout_marginTop="20dp"
         android:hint="Description of Expenditure"
         android:inputType="textMultiLine"
+        android:textColor="#133240"
         android:maxLines="3"
         android:minLines="1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,9 +48,8 @@
 
     <DatePicker
         android:id="@+id/datePickerDonationAlloc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
+        android:layout_width="300dp"
+        android:layout_height="400dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,10 +57,13 @@
 
     <Button
         android:id="@+id/btnSubmitFormDonationALloc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#C2373D"
         android:text="Submit"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/datePickerDonationAlloc" />
 

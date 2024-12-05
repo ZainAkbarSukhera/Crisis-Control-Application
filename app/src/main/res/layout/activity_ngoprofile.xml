@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.NGOProfileActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#EDE5D4">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NGONAME"
-
+        android:textColor="#133240"
         android:textStyle="bold"
         android:id="@+id/NGOProfileName"
         android:textAlignment="center"
@@ -28,58 +29,67 @@
         style="@style/Widget.AppCompat.RatingBar.Indicator"
 />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/NGOProfileDescription"
         android:text="Description"
+        android:textColor="#133240"
+        android:textAlignment="center"
         android:layout_below="@id/NGOProfileRating"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         />
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
             android:layout_below="@id/NGOProfileDescription"
             android:id="@+id/NgoProfileDonationHistoryButton"
             android:text="View Donation History"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
+            android:backgroundTint="#C2373D"
             />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View NGO's Projects"
         android:id="@+id/NGOProfileProjectListButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_below="@id/NgoProfileDonationHistoryButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        />
+        android:backgroundTint="#C2373D"
+        android:text="View NGO's Projects" />
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:text="Relief Camp Locations"
         android:id="@+id/NGOProfileCampLocationButton"
         android:layout_below="@id/NGOProfileProjectListButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#C2373D"
         />
+
     <TextView
         android:id="@+id/txtRateUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/NGOProfileUserRatingBar"
-        android:text="Rate Us!"
+        android:layout_below="@+id/NGOProfileCampLocationButton"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="Rate Us!"
         android:textStyle="bold"
-        />
+        android:textColor="#133240"/>
+
     <RatingBar
+        android:id="@+id/NGOProfileUserRatingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/NGOProfileUserRatingBar"
         android:layout_above="@+id/NGOProfileFooter"
+        android:layout_below="@+id/txtRateUs"
         android:layout_centerHorizontal="true"
-        android:tooltipText="Rate Profile"
-        />
+        android:layout_marginTop="30dp"
+        android:tooltipText="Rate Profile" />
 
     <TextView
         android:id="@+id/txtStaticReport"
@@ -88,46 +98,51 @@
         android:layout_above="@+id/imgReportButton"
         android:layout_alignBaseline="@+id/txtRateUs"
         android:layout_alignEnd="@+id/imgReportButton"
+        android:layout_marginEnd="2dp"
         android:layout_marginRight="10dp"
-        android:text="Report" />
+        android:layout_marginBottom="28dp"
+        android:text="Report"
+        android:textColor="#133240"/>
 
     <ImageButton
         android:id="@+id/imgReportButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/NGOProfileUserRatingBar"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="6dp"
         android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
         android:layout_toEndOf="@+id/NGOProfileUserRatingBar"
-        android:src="@drawable/ic_report"
         android:backgroundTint="#00000000"
-        />
+        android:src="@drawable/ic_report" />
 
     <RelativeLayout
+        android:id="@+id/NGOProfileFooter"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:id="@+id/NGOProfileFooter"
-        >
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#757474"
+        android:layout_marginBottom="23dp">
 
-        android:id="@+id/footerguide"
-        />
+        <View
+            android:id="@+id/footerguide"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="#757474" />
+
         <TextView
+            android:id="@+id/NGOProfileAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Address"
-            android:textAlignment="center"
             android:layout_below="@+id/footerguide"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/NGOProfileAddress"
             android:layout_centerHorizontal="true"
-            />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Address"
+            android:textColor="#133240"
+            android:textAlignment="center" />
     </RelativeLayout>
 
 </RelativeLayout>

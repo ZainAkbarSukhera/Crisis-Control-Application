@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.VolunteerPostActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#EDE5D4">
 
     <TextView
         android:id="@+id/VolunteerPostNgoName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NGO NAME"
+        android:textColor="#133240"
 
         android:textStyle="bold"
         android:textAlignment="center"
@@ -22,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Title"
-
+        android:textColor="#133240"
         android:textStyle="bold"
         android:layout_below="@+id/VolunteerPostNgoName"
         android:id="@+id/VolunteerPostTitle"
@@ -34,6 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Description"
+        android:textColor="#133240"
+        android:textAlignment="center"
         android:layout_below="@id/VolunteerPostTitle"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="10dp"
@@ -46,6 +50,7 @@
         android:layout_alignBaseline="@id/VolunteerPostAmount"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
+        android:textColor="#133240"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -54,12 +59,14 @@
         android:textSize="20sp"
         android:layout_alignBaseline="@id/VolunteerPostAmount"
         android:id="@+id/volunteeredAmount"
+        android:textColor="#133240"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Amount"
         android:layout_alignParentEnd="true"
+        android:textColor="#133240"
 
         android:textAlignment="center"
         android:id="@+id/VolunteerPostAmount"
@@ -75,6 +82,7 @@
         android:id="@+id/VolunteerPostProgressBar"
         android:hapticFeedbackEnabled="true"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:backgroundTint="#E85846"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -84,6 +92,7 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:hint="CNIC"
+      android:textColor="#133240"
       android:id="@+id/volunteerPostCNIC"
       android:layout_marginTop="20dp"
       android:layout_below="@+id/VolunteerPostProgressBar"
@@ -93,18 +102,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Phone Number(03xxxxxxxxx)"
+        android:textColor="#133240"
         android:id="@+id/volunteerPostPhoneNumber"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/volunteerPostCNIC"
         />
     <Button
         android:id="@+id/volunteerPostButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_below="@id/volunteerPostPhoneNumber"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="Volunteer"
+        android:backgroundTint="#C2373D"
         />
     <Button
         android:id="@+id/viewVolunteerList"
@@ -135,7 +146,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:text="Request Volunteers"
-                android:textSize="11sp" />
+                android:textSize="11sp"
+                android:backgroundTint="#C2373D"/>
 
             <Button
                 android:id="@+id/btnRequestDonationsVol"
@@ -143,7 +155,8 @@
                 android:layout_height="wrap_content"
                 android:text="Request Donations"
                 android:layout_marginLeft="5dp"
-                android:textSize="11sp" />
+                android:textSize="11sp"
+                android:backgroundTint="#C2373D"/>
 
 
         </LinearLayout>
@@ -158,9 +171,11 @@
 
             <Button
                 android:id="@+id/btnUpdateProjectVol"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Update Post" />
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Update Post"
+                android:backgroundTint="#C2373D"/>
         </LinearLayout>
 
 

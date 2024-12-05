@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:padding="5dp"
+    android:background="#EDE5D4">
 
     <EditText
         android:id="@+id/edAddProjectTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Title"
+        android:textColor="#133240"
         android:layout_marginTop="20dp"
         />
 
@@ -20,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Description"
+        android:textColor="#133240"
         android:layout_marginTop="20dp"
         />
 
@@ -30,6 +33,7 @@
         android:hint="Number of Donations"
         android:inputType="numberDecimal"
         android:layout_marginTop="20dp"
+        android:textColor="#133240"
         />
 
     <EditText
@@ -39,6 +43,7 @@
         android:hint="Number of Volunteers"
         android:inputType="number"
         android:layout_marginTop="20dp"
+        android:textColor="#133240"
        />
 
 

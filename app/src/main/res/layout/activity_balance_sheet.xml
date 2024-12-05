@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".activities.BalanceSheetActivity">
+    tools:context=".activities.BalanceSheetActivity"
+    android:background="#EDE5D4">
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -32,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Users : "
+            android:textColor="#133240"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -44,6 +46,7 @@
             android:layout_marginTop="5dp"
             android:text="Total Donor accounts : "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toStartOf="@+id/textView8"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -54,6 +57,7 @@
             android:layout_marginTop="5dp"
             android:text="Total Volunteer accounts : "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toStartOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -64,6 +68,7 @@
             android:layout_marginTop="5dp"
             android:text="Total Affectee accounts : "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toStartOf="@+id/textView13"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -74,6 +79,7 @@
             android:layout_marginTop="5dp"
             android:text="Total NGO's : "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toStartOf="@+id/textView14"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -84,6 +90,7 @@
             android:layout_marginTop="5dp"
             android:text="Total Number of Donations : "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toStartOf="@+id/textView9"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -94,6 +101,7 @@
             android:layout_marginTop="5dp"
             android:text="Total Donation Amount : "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toStartOf="@+id/textView15"
             app:layout_constraintTop_toBottomOf="@+id/textView15" />
         <TextView
@@ -103,6 +111,7 @@
             android:layout_marginTop="5dp"
             android:text="Total Pending Donations : "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toStartOf="@+id/textView16"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -113,6 +122,7 @@
             android:layout_marginTop="5dp"
             android:text="Total Number of Applied Volunteers : "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toStartOf="@+id/txt19"
             app:layout_constraintTop_toBottomOf="@+id/txt19" />
 
@@ -123,6 +133,7 @@
             android:layout_marginTop="5dp"
             android:text="Total Number of Reports : "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toStartOf="@+id/textView17"
             app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
@@ -133,6 +144,7 @@
             android:layout_marginStart="20dp"
             android:text="xxxx "
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toEndOf="@+id/textView8"
             app:layout_constraintTop_toTopOf="@+id/textView8" />
 
@@ -140,7 +152,7 @@
             android:id="@+id/totalDonorAccounts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:textColor="#133240"
 
             android:layout_marginStart="20dp"
             android:text="xxxx"
@@ -155,6 +167,7 @@
             android:layout_marginStart="20dp"
             android:text="xxxx"
             android:textSize="17sp"
+            android:textColor="#133240"
             app:layout_constraintStart_toEndOf="@+id/textView13"
             app:layout_constraintTop_toTopOf="@+id/textView13" />
 
@@ -164,6 +177,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="xxxx"
+            android:textColor="#133240"
             android:textSize="17sp"
             app:layout_constraintStart_toEndOf="@+id/textView14"
             app:layout_constraintTop_toTopOf="@+id/textView14" />
@@ -174,6 +188,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="xxxx"
+            android:textColor="#133240"
             android:textSize="17sp"
             app:layout_constraintStart_toEndOf="@+id/textView9"
             app:layout_constraintTop_toTopOf="@+id/textView9" />
@@ -184,6 +199,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="xxxx"
+            android:textColor="#133240"
             android:textSize="17sp"
             app:layout_constraintStart_toEndOf="@+id/textView15"
             app:layout_constraintTop_toTopOf="@+id/textView15" />
@@ -194,6 +210,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="xxxx"
+            android:textColor="#133240"
             android:textSize="17sp"
             app:layout_constraintStart_toEndOf="@+id/txt19"
             app:layout_constraintTop_toTopOf="@+id/txt19" />
@@ -201,7 +218,7 @@
             android:id="@+id/totalDonationAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:textColor="#133240"
             android:layout_marginStart="20dp"
             android:text="xxxx"
             android:textSize="17sp"
@@ -214,6 +231,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="xxxx"
+            android:textColor="#133240"
             android:textSize="17sp"
             app:layout_constraintStart_toEndOf="@+id/textView17"
             app:layout_constraintTop_toTopOf="@+id/textView17" />
@@ -224,6 +242,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="xxxx"
+            android:textColor="#133240"
             android:textSize="17sp"
             app:layout_constraintStart_toEndOf="@+id/textView18"
             app:layout_constraintTop_toTopOf="@+id/textView18" />
@@ -232,7 +251,7 @@
 
     <HorizontalScrollView
         android:layout_marginTop="20dp"
-        android:background="#3d455b"
+        android:background="#E85846"
         android:id="@+id/hscrll1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -254,6 +273,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:text="Balance Sheet"
+                android:textColor="#133240"
                 android:visibility="gone" />
 
             <TableLayout

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.AdminLoginProfile"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#EDE5D4">
 
     <ImageButton
         android:id="@+id/btnAdminLogout"
@@ -25,8 +26,9 @@
 
     <Button
         android:id="@+id/btnAdminBlockNGO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C2373D"
         android:text="Block NGO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,8 +37,9 @@
 
     <Button
         android:id="@+id/btnAdminAddAcount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C2373D"
         android:text="Add Admin Account"
         app:layout_constraintBottom_toTopOf="@+id/btnPendingDonations"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,8 +49,9 @@
 
     <Button
         android:id="@+id/btnManageReports"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C2373D"
         android:text="Manage Reports"
         app:layout_constraintBottom_toTopOf="@+id/btnGenerateBalanceSheet"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,8 +61,9 @@
 
     <Button
         android:id="@+id/btnGenerateBalanceSheet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C2373D"
         android:text="Generate BalanceSheet"
         app:layout_constraintBottom_toTopOf="@+id/btnAdminBlockNGO"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,8 +76,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Admin : "
-        android:textStyle="bold"
-        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="#133240"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
@@ -83,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Admin Name"
-
+        android:textColor="#133240"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textSize="30sp"
@@ -100,8 +106,9 @@
 
     <Button
         android:id="@+id/btnPendingDonations"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C2373D"
         android:text="Pending Donations"
         app:layout_constraintBottom_toTopOf="@+id/btnManageReports"
         app:layout_constraintEnd_toEndOf="parent"

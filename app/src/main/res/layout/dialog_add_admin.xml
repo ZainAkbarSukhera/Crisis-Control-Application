@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp">
+    android:padding="5dp"
+    android:background="#EDE5D4">
 
     <EditText
         android:id="@+id/edCurrentAdminCNIC"
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="Enter your CNIC"
+        android:textColor="#133240"
         android:inputType="number"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColor="#133240"
         android:inputType="number"
         android:hint="Enter new Admin CNIC"
         app:layout_constraintTop_toBottomOf="@+id/edCurrentAdminCNIC" />
@@ -29,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColor="#133240"
         android:hint="Enter your Password"
         app:layout_constraintTop_toBottomOf="@+id/edNewAdminCNIC" />
 
@@ -37,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColor="#133240"
         android:hint="Re-Enter your Password"
         app:layout_constraintTop_toBottomOf="@+id/edNewAdminPassword" />
     <EditText
@@ -44,6 +49,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter Full Name"
         android:layout_marginTop="20dp"
+        android:textColor="#133240"
         app:layout_constraintTop_toBottomOf="@+id/edNewAdminPasswordRecheck"
         android:id="@+id/edNewAdminName"
         />

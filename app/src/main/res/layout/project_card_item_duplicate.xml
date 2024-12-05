@@ -11,8 +11,7 @@
     android:layout_marginTop="10dp"
     android:layout_marginRight="20dp"
     android:layout_marginBottom="20dp"
-
-
+    android:background="#EDE5D4"
     >
 
     <com.google.android.material.card.MaterialCardView
@@ -30,7 +29,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/purple_500">
+            android:background="#E85846">
 
             <TextView
                 android:id="@+id/donation_title_dup"
@@ -38,8 +37,9 @@
                 android:layout_height="wrap_content"
                 android:text="Title"
                 android:textAlignment="center"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -53,6 +53,7 @@
                 android:text="Amount"
                 android:textSize="20sp"
                 android:textStyle="italic"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/donation_ngo_dup"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +66,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="2dp"
                 android:text="This is the description of the Donation"
+                android:textColor="@color/white"
                 android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -72,11 +74,12 @@
 
             <TextView
                 android:id="@+id/donation_ngo_dup"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="NGO Name"
+                android:textSize="15dp"
                 android:textAlignment="center"
                 app:layout_constraintBottom_toTopOf="@+id/donation_desc_dup"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -100,7 +103,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/purple_500">
+            android:background="#E85846">
 
             <TextView
                 android:id="@+id/volunteer_title_dup"
@@ -108,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:text="Title"
                 android:textAlignment="center"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -124,6 +127,7 @@
                 android:text="Amount"
                 android:textSize="20sp"
                 android:textStyle="italic"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/volunteer_ngo_dup"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -136,6 +140,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="2dp"
                 android:text="This is the description of the Donation"
+                android:textColor="@color/white"
+
                 android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -143,12 +149,13 @@
 
             <TextView
                 android:id="@+id/volunteer_ngo_dup"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="5dp"
                 android:textAlignment="center"
                 android:text="NGO Name"
+                android:textSize="15dp"
                 app:layout_constraintBottom_toTopOf="@+id/volunteer_desc_dup"
                 app:layout_constraintStart_toStartOf="parent" />
 

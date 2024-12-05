@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.ProfileActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#EDE5D4">
 
     <EditText
         android:id="@+id/ProfileName"
         android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#133240"
         app:layout_constraintBottom_toTopOf="@+id/btnProfileGetDonationHistory"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,6 +23,7 @@
         android:id="@+id/ProfileDOB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#133240"
         app:layout_constraintBottom_toTopOf="@+id/ProfileName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +33,7 @@
         android:inputType="textMultiLine"
         android:minLines="1"
         android:maxLines="3"
+        android:textColor="#133240"
         android:id="@+id/ProfileAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,25 +45,27 @@
 
     <Button
         android:id="@+id/btnProfileUpdateAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:text="Update Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnProfileGetDonationHistory"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.334"
+        android:backgroundTint="#C2373D"/>
 
     <Button
         android:id="@+id/btnProfileGetDonationHistory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:text="My Donations"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:backgroundTint="#C2373D" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

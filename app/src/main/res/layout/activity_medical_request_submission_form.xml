@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".activities.MedicalRequestSubmissionFormActivity">
+    tools:context=".activities.MedicalRequestSubmissionFormActivity"
+    android:background="#EDE5D4">
 
     <EditText
         android:id="@+id/MedReqCity"
@@ -13,8 +14,10 @@
         android:layout_height="wrap_content"
         android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
         android:hint="City"
+        android:textColor="#133240"
         app:layout_constraintBottom_toTopOf="@+id/MedReqAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,8 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Address"
+        android:textColor="#133240"
         app:layout_constraintBottom_toTopOf="@+id/MedReqInjured"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MedReqCity" />
 
@@ -34,6 +39,7 @@
         android:layout_height="wrap_content"
         android:hint="Number Injured"
         android:inputType="number"
+        android:textColor="#133240"
         app:layout_constraintBottom_toTopOf="@+id/MedReqDescription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,16 +50,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Description"
+        android:textColor="#133240"
         app:layout_constraintBottom_toTopOf="@+id/MedReqSubmit"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MedReqInjured" />
 
     <Button
         android:id="@+id/MedReqSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:text="Submit"
+        android:backgroundTint="#C2373D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

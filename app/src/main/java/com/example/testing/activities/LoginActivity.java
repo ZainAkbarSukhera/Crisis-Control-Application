@@ -19,7 +19,6 @@ import com.example.testing.classes.CCDatabase;
 import com.example.testing.classes.CurrentAccount;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.messaging.FirebaseMessaging;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText loginUser,loginPass;
@@ -41,7 +40,6 @@ public class LoginActivity extends AppCompatActivity {
 
                 int aID = db.accountDao().getAccIDByLogin(loginUser.getText().toString(), loginPass.getText().toString());
                 if (aID != 0) {
-//                    FirebaseMessaging.getInstance().subscribeToTopic("PushNotifications");
                     if (db.userDao().getUserByID(aID) != null) {
 
                         CurrentAccount.initInstance(aID, db.userDao().getUserByID(aID).getUserType());

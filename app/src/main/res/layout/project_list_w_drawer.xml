@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.DonationListActivity"
     android:id="@+id/navDrawer"
+    android:background="#EDE5D4"
     >
 
     <RelativeLayout
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/navToolBar"
             android:elevation="5dp"
-            android:background="@color/design_default_color_primary"
+            android:background="#C2373D"
             app:navigationIcon="@drawable/ic_menu"
             app:title="Donations"
             app:titleCentered="true"
